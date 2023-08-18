@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<div class="text">
+    <h3>“It’s so incredible to finally <br> be understood.”</h3>
+</div>
+<div>
+    <h4>Welcome! Press button below to take our free personality test.</h4>
+</div>
+
+<a class="btn btn-primary" href="/personality_test" role="button">Take our test</a>
+
+<div class="stats">
+    <h5>Tests taken so far</h3>
+    <div class="counter">{{ counter[0]["counter"] }}</div>
+</div>
+
+{% endblock %}

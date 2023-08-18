@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">MBTI</th>
+            <th class="text-end">Troverted</th>
+            <th class="text-end">SensorTuitive</th>
+            <th class="text-end">ThinkerFeeling</th>
+            <th class="text-end">JudgingPerceiving</th>
+            <th class="text-end">Date</th>
+        </tr>
+    </thead>
+   <tbody>
+
+    {% for row in history_info %}
+            <tr>
+                <td class="text-start">{{ row["MBTI"] }}</td>
+                <td class="text-end">{{ row["Troverted"] }}</td>
+                <td class="text-end">{{ row["SensorTuitive"] }}</td>
+                <td class="text-end">{{ row["ThinkerFeeling"] }}</td>
+                <td class="text-end">{{ row["JudgingPerceiving"] }}</td>
+                <td class="text-end">{{ row["date"] }} </td>
+            </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

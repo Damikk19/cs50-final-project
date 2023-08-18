@@ -1,0 +1,62 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.counter
+{
+    color: red;
+    font-size: x-large;
+    margin-top: 15px;
+}
+
+.text
+{
+    margin-bottom: 15px;
+}
+
+.btn
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.slider
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.subtitle
+{
+    margin-bottom: 15px;
+    font-size: smaller;
+}
+
+.type
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+

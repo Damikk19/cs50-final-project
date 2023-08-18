@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<h2>How much do you agree with the following statements?</h1>
+<div>
+    <form action="/personality_test" method="post">
+        <h3>I/E</h3>
+        <div class="container">
+            <div class="section">
+                <h5>You regularly make new friends.</h5>
+                <div class="slidecontainer">
+                    <span>Fully Disagree</span>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="TrovertedValue" id="TrovertedValue">
+                    <span>Fully Agree</span>
+                </div>
+                <h5>At social events, you often try to introduce yourself to new people and mostly talk to the ones you meet.</h5>
+                <div class="slidecontainer">
+                    <span>Fully Disagree</span>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="TrovertedValue2" id="TrovertedValue2">
+                    <span>Fully Agree</span>
+                </div>
+                <h5>You feel comfortable just walking up to someone you find interesting and striking up a conversation.</h5>
+                <div class="slidecontainer">
+                    <span>Fully Disagree</span>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="TrovertedValue3" id="TrovertedValue3">
+                    <span>Fully Agree</span>
+                </div>
+            </div>
+
+
+
+
+            <h3>S/N</h3>
+            <div class="container">
+                <div class="section">
+                    <h5>Mistakes won't cause you to doubt your overall abilities and knowledge.</h5>
+                    <div class="slidecontainer">
+                        <span>Fully Disagree</span>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="SensorTuitive" id="SensorTuitive">
+                        <span>Fully Agree</span>
+                    </div>
+                    <h5>You are interested in so many things that you find it difficult to choose what to try next.</h5>
+                    <div class="slidecontainer">
+                        <span>Fully Disagree</span>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="SensorTuitive2" id="SensorTuitive2">
+                        <span>Fully Agree</span>
+                    </div>
+                    <h5>You have always been fascinated by the question of what, if anything, happens after death.</h5>
+                    <div class="slidecontainer">
+                        <span>Fully Disagree</span>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="SensorTuitive3" id="SensorTuitive3">
+                        <span>Fully Agree</span>
+                    </div>
+                </div>
+
+
+
+
+            <h3>T/F</h3>
+            <div class="container">
+                <div class="section">
+                    <h5>Seeing other people cry can easily make you feel like you want to cry too.</h5>
+                    <div class="slidecontainer">
+                        <span>Fully Disagree</span>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="ThinkerFeeling" id="ThinkerFeeling">
+                        <span>Fully Agree</span>
+                    </div>
+                    <h5>You are very sentimental.</h5>
+                    <div class="slidecontainer">
+                        <span>Fully Disagree</span>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="ThinkerFeeling2" id="ThinkerFeeling2">
+                        <span>Fully Agree</span>
+                    </div>
+                    <h5>You are more inclined to follow your heart than your head.</h5>
+                    <div class="slidecontainer">
+                        <span>Fully Disagree</span>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="ThinkerFeeling3" id="ThinkerFeeling3">
+                        <span>Fully Agree</span>
+                    </div>
+                </div>
+
+
+
+                <h3>P/J</h3>
+                <div class="container">
+                    <div class="section">
+                        <h5>You like to use organizing tools like schedules and lists.</h5>
+                        <div class="slidecontainer">
+                            <span>Fully Disagree</span>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="JudgingPerceiving" id="JudgingPerceiving">
+                            <span>Fully Agree</span>
+                        </div>
+                        <h5>You don't usually prefer just doing what you feel like at any given moment instead of planning a particular daily routine.</h5>
+                        <div class="slidecontainer">
+                            <span>Fully Disagree</span>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="JudgingPerceiving2" id="JudgingPerceiving2">
+                            <span>Fully Agree</span>
+                        </div>
+                        <h5>You often make a backup plan for a backup plan.</h5>
+                        <div class="slidecontainer">
+                            <span>Fully Disagree</span>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="JudgingPerceiving3" id="JudgingPerceiving3">
+                            <span>Fully Agree</span>
+                        </div>
+                    </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
